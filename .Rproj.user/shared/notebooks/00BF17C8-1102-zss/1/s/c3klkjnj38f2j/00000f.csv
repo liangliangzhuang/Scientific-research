@@ -1,0 +1,3 @@
+"0","sigma = 0.14"
+"0","n = seq(3,10,1)"
+"0","logn_dist <- function(n) exp(-(log(n)-log(6))^2/(2*sigma^2))/(sqrt(2*pi)*sigma*n) #函数里面就是密度函数的公式，可以在数理统计相关书籍中找到。"
