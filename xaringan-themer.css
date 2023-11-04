@@ -45,20 +45,20 @@
   /* Colors */
   --text-color: #18273F;
   --header-color: #23395b;
-  --background-color: #E9EBEE;
+  --background-color: white;
   --link-color: #EE81C3;
   --text-bold-color: #23395b;
   --code-highlight-color: rgba(255,255,0,0.5);
-  --inverse-text-color: #E9EBEE;
+  --inverse-text-color: white;
   --inverse-background-color: #23395b;
-  --inverse-header-color: #E9EBEE;
+  --inverse-header-color: white;
   --inverse-link-color: #EE81C3;
   --title-slide-background-color: #23395b;
-  --title-slide-text-color: #E9EBEE;
+  --title-slide-text-color: white;
   --header-background-color: #23395b;
-  --header-background-text-color: #E9EBEE;
+  --header-background-text-color: white;
   --base: #23395b;
-  --white: #E9EBEE;
+  --white: white;
   --black: #18273F;
 }
 

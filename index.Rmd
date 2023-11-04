@@ -30,7 +30,9 @@ knitr::opts_chunk$set(
 
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
-style_mono_light(base_color = "#23395b", link_color = "#EE81C3")
+style_mono_light(base_color = "#23395b", 
+                 white_color = "white",
+                 link_color = "#EE81C3")
 ```
 
 <!-- # ```{r xaringan-themer, include=FALSE, warning=FALSE} -->
@@ -54,19 +56,24 @@ style_mono_light(base_color = "#23395b", link_color = "#EE81C3")
 
 - 研究方向：可靠性统计、贝叶斯方法；
 
-- 爱好：R语言相关（**可视化**，**文档沟通**）；
+<!-- - 一作发表 SCI 论文 3 篇（两篇1区，一篇2区）； -->
+
+<!-- - 预计 2024 年前往新加坡国立公派留学一年； -->
+
+- 爱好：R 语言相关（**可视化**，**文档沟通**）；
 
     ]
   
   .pull-right[
     
-```{r,echo=FALSE,out.width="100%",fig.cap=""}
-knitr::include_graphics("figure/gzh.jpg")
+```{r,echo=FALSE,out.width="80%",fig.cap=""}
+knitr::include_graphics("figure/g1.jpg")
 ```
+
+
 
   ]
   
-
 
 ---
 
@@ -142,6 +149,7 @@ class: inverse, middle, center
   
   2. [Inoreader](https://www.innoreader.com/starred)，[教程](https://mp.weixin.qq.com/s/MDwtTM10lugzF_6Q2KX-SQ)、[Researcher](https://www.researcher-app.com/) 跟踪**期刊**最新文章。
 
+<br/>
 <!-- > **技巧**：使用以上网站持续关注某些大牛的工作。 -->
 
   .pull-left[
@@ -161,6 +169,7 @@ class: inverse, middle, center
  
   2. [Code Ocean](https://codeocean.com/) 是 Nature 推荐过的一个可重现性代码共享平台。
  
+ <br/>
   .pull-left[
       ![](figure/3.jpg)
     ]
@@ -179,7 +188,7 @@ class: inverse, middle, center
 
 ---
 
-
+## 文献管理
 ```{r,echo=FALSE,out.width="70%",fig.cap="使用 Endnote 管理文献", fig.align='center'}
 knitr::include_graphics("figure/8.jpg")
 ```
@@ -196,46 +205,74 @@ class: inverse, middle, center
 
 <!-- - Word、**LaTeX**、**R Markdown** 等工具撰写文章。 -->
 
-- **LaTeX**：专业的排版系统，适合处理篇幅较长、结构严谨的文档，擅长处理公式，。
+## 常用软件
 
-- **R Markdown**：R 语言环境中提供的 markdown 编辑工具，*程序结果直接输出*。
 
-- 共同优点：无需排版、通过代码解决、开源。
+- **LaTeX**：专业的排版系统，适合处理篇幅较长、结构严谨的文档，擅长处理公式。
+
+- **R Markdown**：R 语言环境中提供的 **markdown** 编辑工具，*程序结果直接输出*。
+
+<!-- - **markdown**: 轻量级的标记语言，可用于在纯文本文档中添加格式化元素。 -->
+
+- **共同优点**：无需操心文档的版面设计、很容易生成复杂的专业排版元素、开源。
+
+- **共同缺点**： 入门门槛高；不容易排查错误；不容易定制样式。
+
+
 
   .pull-left[
   
-```{r,echo=FALSE,out.width="100%",fig.cap="LaTeX", fig.align='center'}
+```{r,echo=FALSE,out.width="90%",fig.cap="LaTeX", fig.align='center'}
 knitr::include_graphics("figure/9.jpg")
 ```
     ]
   
   .pull-right[
     
-```{r,echo=FALSE,out.width="100%",fig.cap="R Markdown", fig.align='center'}
+```{r,echo=FALSE,out.width="90%",fig.cap="R Markdown", fig.align='center'}
 knitr::include_graphics("figure/10.jpg")
 ```
 
   ]
 
-
 ---
 
 ## LaTeX
 
+- 文档类：article、report、book、proc、slides、minimal
 
-相关教程：1. [LaTeX教程](https://mp.weixin.qq.com/s?__biz=MzI1NjUwMjQxMQ==&mid=2247506169&idx=1&sn=5672593d286379acd050575a74cff2b3&scene=21#wechat_redirect)、2. [多图排版笔记](https://mp.weixin.qq.com/s?__biz=MzI1NjUwMjQxMQ==&mid=2247505698&idx=1&sn=52bdfb019180d7b7c9d6a559447ffd71&scene=21#wechat_redirect)、3. [常用数学符号汇总](https://mp.weixin.qq.com/s?__biz=MzI1NjUwMjQxMQ==&mid=2247511519&idx=1&sn=0c552535b2e44b0e66578235b413349a&scene=21#wechat_redirect)、4. [适合撰写课程论文的 LaTeX 模板](https://mp.weixin.qq.com/s?__biz=MzI1NjUwMjQxMQ==&mid=2247517425&idx=2&sn=23e8b142e08a7b8a3a55a88a5895aac2&scene=21#wechat_redirect)
+- 正文内容：章节、目录、脚注、表格、图形、交叉引用。
 
+
+```{r,echo=FALSE,out.width="40%",fig.cap="源代码结构", fig.align='center'}
+knitr::include_graphics("figure/latex.jpg")
+```
+
+
+<br/>
+> 相关教程：1. [LaTeX入门教程书籍](https://mp.weixin.qq.com/s?__biz=MzI1NjUwMjQxMQ==&mid=2247506169&idx=1&sn=5672593d286379acd050575a74cff2b3&scene=21#wechat_redirect)、2. [多图排版笔记](https://mp.weixin.qq.com/s?__biz=MzI1NjUwMjQxMQ==&mid=2247505698&idx=1&sn=52bdfb019180d7b7c9d6a559447ffd71&scene=21#wechat_redirect)、3. [常用数学符号汇总](https://mp.weixin.qq.com/s?__biz=MzI1NjUwMjQxMQ==&mid=2247511519&idx=1&sn=0c552535b2e44b0e66578235b413349a&scene=21#wechat_redirect)、4. [课程论文模板](https://mp.weixin.qq.com/s?__biz=MzI1NjUwMjQxMQ==&mid=2247517425&idx=2&sn=23e8b142e08a7b8a3a55a88a5895aac2&scene=21#wechat_redirect)、5. [下载使用期刊的 LaTeX 模板](https://mp.weixin.qq.com/s?__biz=MzI1NjUwMjQxMQ==&mid=2247505453&idx=1&sn=16deb06f254d88e6e823782ce8ab12dd&scene=21#wechat_redirect)。
 
 
 ---
 
-## Rmarkdown
+## R Markdown
 
-1. [32 份 R 语言文档沟通推文汇总](https://mp.weixin.qq.com/s?__biz=MzI1NjUwMjQxMQ==&mid=2247514178&idx=1&sn=51a585fe8818494979019a837ef50923&scene=21#wechat_redirect)
+```{r,echo=FALSE,out.width="90%",fig.cap="", fig.align='center'}
+knitr::include_graphics("figure/rm2.jpg")
+```
 
-2. [1.5w 字的 R Markdown 入门教程汇总](https://mp.weixin.qq.com/s?__biz=MzI1NjUwMjQxMQ==&mid=2247493762&idx=1&sn=b70a531122d0ee57fda44f0fbc9c742d&scene=21#wechat_redirect)
 
-3. Bookdown中文书稿写作手册([（上）](https://mp.weixin.qq.com/s?__biz=MzI1NjUwMjQxMQ==&mid=2247497924&idx=1&sn=f55d05d91ab71b1a05769fc002aab692&scene=21#wechat_redirect), [（中）](https://mp.weixin.qq.com/s?__biz=MzI1NjUwMjQxMQ==&mid=2247498942&idx=1&sn=89ad5b8124f1a99f9942d4f945d52a5c&scene=21#wechat_redirect), [（下）](https://mp.weixin.qq.com/s?__biz=MzI1NjUwMjQxMQ==&mid=2247499154&idx=1&sn=d2e09db535b90f3cff84c67cf34751de&scene=21#wechat_redirect))
+---
+
+## R Markdown
+
+
+```{r,echo=FALSE,out.width="60%",fig.cap="入门教程", fig.align='center'}
+knitr::include_graphics("figure/rmarkdown.jpg")
+```
+
+
+> 相关教程：[32 份文档沟通推文汇总](https://mp.weixin.qq.com/s?__biz=MzI1NjUwMjQxMQ==&mid=2247514178&idx=1&sn=51a585fe8818494979019a837ef50923&scene=21#wechat_redirect)[入门教程文字版本](https://mp.weixin.qq.com/s?__biz=MzI1NjUwMjQxMQ==&mid=2247493762&idx=1&sn=b70a531122d0ee57fda44f0fbc9c742d&scene=21#wechat_redirect)、Bookdown 中文书稿写作手册([（上）](https://mp.weixin.qq.com/s?__biz=MzI1NjUwMjQxMQ==&mid=2247497924&idx=1&sn=f55d05d91ab71b1a05769fc002aab692&scene=21#wechat_redirect), [（中）](https://mp.weixin.qq.com/s?__biz=MzI1NjUwMjQxMQ==&mid=2247498942&idx=1&sn=89ad5b8124f1a99f9942d4f945d52a5c&scene=21#wechat_redirect), [（下）](https://mp.weixin.qq.com/s?__biz=MzI1NjUwMjQxMQ==&mid=2247499154&idx=1&sn=d2e09db535b90f3cff84c67cf34751de&scene=21#wechat_redirect))。
 
 
 
@@ -249,21 +286,46 @@ class: inverse, middle, center
 
 ## 常用绘图软件
 
-- 使用 
-R （[ggplot2](https://ggplot2.tidyverse.org/ "ggplot2")）、Python、matlab、[Visio](https://www.microsoft.com/zh-cn/microsoft-365/visio/flowchart-software "Visio")、[Hiplot](https://hiplot.com.cn/ "Hiplot")、[Echart](https://echarts.apache.org/zh/index.html "Echart") 等进行可视化。
+- 软件：R （[ggplot2](https://ggplot2.tidyverse.org/ "ggplot2")）、Python（[matplotlib](https://matplotlib.org/)）、[matlab](https://ww2.mathworks.cn/help/matlab/creating_plots/types-of-matlab-plots.html)、[Visio](https://www.microsoft.com/zh-cn/microsoft-365/visio/flowchart-software "Visio")、[Origin](https://www.originlab.com/) 等。
+- 网站：[Hiplot](https://hiplot.com.cn/)、[Echart](https://echarts.apache.org/examples/zh/index.html)（[教程](https://mp.weixin.qq.com/s/fkxS5ypsuXe41i-ysUtGnQ)）等。
 
-- ggplot2 包介绍，特点。
+  .pull-left[
+  
+```{r,echo=FALSE,out.width="100%",fig.cap="Echart", fig.align='center'}
+knitr::include_graphics("figure/333.jpg")
+```
+
+    ]
+  
+  .pull-right[
+    
+```{r,echo=FALSE,out.width="100%",fig.cap="Hiplot", fig.align='center'}
+knitr::include_graphics("figure/444.jpg")
+```
+
+  ]
+  
 
 
 ---
 
 ## ggplot2 包
 
-- **核心理念**：将绘图与数据分离，数据相关的绘图与数据无关的绘图分离，按 **图层**作图。
+- 2019 年因其在“**统计计算**、**可视化**、**图形和数据分析**方面的有影响力的工作”而被授予 [COPSS 总统奖](https://en.wikipedia.org/wiki/COPSS_Presidents%27_Award)。
 
-- 一句语句绘制一幅图，然后进行图层叠加 **“+”**。
+```{r,echo=FALSE,out.width="55%",fig.cap="Harley Wickham", fig.align='center'}
+knitr::include_graphics("figure/66.jpg")
+```
 
-- 包括 9 个部件：**数据** (data) 、**映射** (mapping)、**几何对象**、统计变换 (stats)、标度 (scale)、坐标系 (coord)、分面 (facet)、主题 (theme) 和存储和输出 (output)。
+---
+
+## ggplot2 包
+
+- **目标**：提供一个全面、基于语法、连贯一致的图形生成系统。
+
+- **核心理念**：将绘图与数据分离，按**图层**作图，常用符号 **“+”**。
+
+-  9 个部分：**数据** (data) 、**映射** (mapping)、**几何对象**、统计变换 (stats)、标度 (scale)、坐标系 (coord)、分面 (facet)、主题 (theme) 和存储和输出 (output)。
 
 ```{r,echo=FALSE,out.width="60%",fig.cap="", fig.align='center'}
 knitr::include_graphics("figure/14.jpg")
@@ -303,22 +365,20 @@ knitr::include_graphics("figure/13.jpg")
 
 ### 可用资源
 
-- 推荐书籍：
+> 推荐书籍： 《[ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/)》、《[R for Data Science](https://r4ds.had.co.nz/)》、《[R语言教程](https://www.math.pku.edu.cn/teachers/lidf/docs/Rbook/html/_Rbook/ggplot2.html)》-李东风
 
-1. ggplot2: Elegant Graphics for Data Analysis https://ggplot2-book.org/ 
-
-2. Fundamentals of Data Visualization https://clauswilke.com/dataviz/
+<br/>
 
   .pull-left[
   
-```{r,echo=FALSE,out.width="100%",fig.cap="R语言初级绘图教程", fig.align='center'}
+```{r,echo=FALSE,out.width="100%",fig.cap="视频教程", fig.align='center'}
 knitr::include_graphics("figure/11.jpg")
 ```
     ]
   
   .pull-right[
     
-```{r,echo=FALSE,out.width="100%",fig.cap="案例分析", fig.align='center'}
+```{r,echo=FALSE,out.width="100%",fig.cap="案例分析：https://liangliangzhuang.github.io/R-tutorial/", fig.align='center'}
 knitr::include_graphics("figure/12.jpg")
 ```
   ]
@@ -328,7 +388,7 @@ knitr::include_graphics("figure/12.jpg")
 
 class: center, middle
 
-# 蟹蟹
+# 谢谢
 
 本幻灯片由 R 包 [**xaringan**](https://github.com/yihui/xaringan) 生成。
 
