@@ -1,0 +1,10 @@
+.DS_Store
+.RData
+.Rhistory
+.Ruserdata
+.Rproj.user/
+.Renviron
+*_cache/
+index.knit.md
+index.utf8.md
+.Rproj.user

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xml:lang="zh-CN">
+  <head>
+    <title>科研流程与 AI 辅助科研</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="庄亮亮" />
+    <meta name="date" content="2026-10-20" />
+    <script src="index_files/header-attrs/header-attrs.js"></script>
+    <link href="index_files/remark-css/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="talk.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# 科研流程与 AI 辅助科研
+]
+.author[
+### 庄亮亮
+]
+.date[
+### 2026-10-20
+]
+
+---
+
+
+
+
+class: overview
+
+## 怎样把一项研究推进到完成？
+
+&lt;div class="research-map" aria-label="确定方向、文献检索、阅读与管理、研究问题、研究实施、论文表达、投稿修改，反复迭代"&gt;
+&lt;svg class="feedback-edge" viewBox="0 0 1062 316" aria-hidden="true"&gt;&lt;defs&gt;&lt;marker id="back-arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"&gt;&lt;path d="M0,0 L8,4 L0,8" fill="none" stroke="#23395b" stroke-width="1.4"/&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;path d="M276,252 H117 V138" fill="none" stroke="#718eaf" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#back-arrow)"/&gt;&lt;/svg&gt;
+&lt;div class="stage s1"&gt;&lt;span&gt;01&lt;/span&gt;&lt;strong&gt;确定方向&lt;/strong&gt;&lt;small&gt;导师课题 · 实际问题&lt;/small&gt;&lt;/div&gt;
+&lt;div class="stage s2"&gt;&lt;span&gt;02&lt;/span&gt;&lt;strong&gt;文献检索&lt;/strong&gt;&lt;small&gt;关键词 · 引用关系&lt;/small&gt;&lt;/div&gt;
+&lt;div class="stage s3"&gt;&lt;span&gt;03&lt;/span&gt;&lt;strong&gt;阅读与管理&lt;/strong&gt;&lt;small&gt;精读 · 笔记 · 文献库&lt;/small&gt;&lt;/div&gt;
+&lt;div class="stage s4"&gt;&lt;span&gt;04&lt;/span&gt;&lt;strong&gt;研究问题&lt;/strong&gt;&lt;small&gt;已有不足 · 可行切口&lt;/small&gt;&lt;/div&gt;
+&lt;div class="stage s7"&gt;&lt;span&gt;07&lt;/span&gt;&lt;strong&gt;投稿修改&lt;/strong&gt;&lt;small&gt;期刊要求 · 审稿回复&lt;/small&gt;&lt;/div&gt;
+&lt;div class="stage s6"&gt;&lt;span&gt;06&lt;/span&gt;&lt;strong&gt;论文表达&lt;/strong&gt;&lt;small&gt;图表 · 公式 · 写作&lt;/small&gt;&lt;/div&gt;
+&lt;div class="stage s5"&gt;&lt;span&gt;05&lt;/span&gt;&lt;strong&gt;研究实施&lt;/strong&gt;&lt;small&gt;复现 · 拓展 · 验证&lt;/small&gt;&lt;/div&gt;
+&lt;div class="feedback"&gt;↶ 结果与预期不符：回查文献、假设与研究问题&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="page-note"&gt;科研是反复迭代的：每一步都留下可检查的记录，返修也可能回到研究实施。&lt;/div&gt;
+
+???
+约 1.5 分钟。沿蛇形箭头读七个阶段，强调研究问题可以在阅读、复现和实验中逐渐变化。反馈关系不是机械走完一次流程；不支持预期的结果也要记录。
+---
+
+class: direction
+
+## 怎样从一个宽泛方向找到切入点？
+
+&lt;div class="three-flow"&gt;
+&lt;div class="step"&gt;&lt;span&gt;起点&lt;/span&gt;&lt;strong&gt;导师课题／研究领域&lt;/strong&gt;&lt;p&gt;了解任务与已有资源&lt;br&gt;从实际问题出发&lt;/p&gt;&lt;/div&gt;
+&lt;div class="step"&gt;&lt;span&gt;阅读&lt;/span&gt;&lt;strong&gt;核心文献与已有方法&lt;/strong&gt;&lt;p&gt;先读综述，再读核心论文&lt;br&gt;梳理问题、方法与不足&lt;/p&gt;&lt;/div&gt;
+&lt;div class="step"&gt;&lt;span&gt;收窄&lt;/span&gt;&lt;strong&gt;具体研究问题&lt;/strong&gt;&lt;p&gt;明确研究对象与条件&lt;br&gt;与导师讨论是否值得做&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="example-band"&gt;&lt;span class="eyebrow"&gt;方向收窄示例&lt;/span&gt;&lt;p&gt;可靠性统计 → 寿命数据 → 右删失数据 → &lt;strong&gt;指定时点可靠度的估计与区间&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class="page-note"&gt;&lt;strong&gt;AI 辅助：&lt;/strong&gt;整理资料、梳理主题与待查术语；回原文核对，最后留下“一页方向说明”。&lt;/div&gt;
+
+???
+约 1.5 分钟。示例是假设的选题路径，不是已经确认的研究空白。右删失指试验结束时部分产品尚未失效。让 AI 依据提供的综述整理关系并保留来源；不依赖凭记忆补造的文献。
+---
+
+class: search
+
+## 怎样检索经典文献和最新工作？
+
+&lt;div class="search-layout"&gt;
+&lt;div&gt;
+&lt;h3&gt;① 拆关键词，再组合检索&lt;/h3&gt;
+&lt;p&gt;对象：&lt;code&gt;reliability&lt;/code&gt;／&lt;code&gt;lifetime&lt;/code&gt;&lt;br&gt;数据：&lt;code&gt;right censoring&lt;/code&gt;／&lt;code&gt;censored data&lt;/code&gt;&lt;br&gt;方法：&lt;code&gt;Bayesian estimation&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://scholar.google.com/"&gt;Google Scholar&lt;/a&gt;&lt;/p&gt;
+&lt;div class="query"&gt;"reliability" "right censoring" Bayesian&lt;/div&gt;
+&lt;p&gt;&lt;a href="https://www.webofscience.com/"&gt;Web of Science&lt;/a&gt; · 主题检索&lt;/p&gt;
+&lt;div class="query"&gt;TS=(reliability AND ("right censoring" OR "censored data") AND Bayesian)&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h3&gt;② 兼顾经典与最新&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;经典：&lt;/strong&gt;从综述追溯关键原文&lt;br&gt;&lt;strong&gt;最新：&lt;/strong&gt;按年份筛选，检查正式发表版本&lt;/p&gt;
+&lt;h3&gt;③ 沿引用关系扩展&lt;/h3&gt;
+&lt;p&gt;先看 References，再点 Cited by；&lt;br&gt;用 &lt;a href="https://www.connectedpapers.com/"&gt;Connected Papers&lt;/a&gt;／&lt;a href="https://www.researchrabbit.ai/"&gt;ResearchRabbit&lt;/a&gt;&lt;br&gt;从一篇种子论文探索相关工作。&lt;/p&gt;
+&lt;div class="quiet-block"&gt;&lt;strong&gt;AI：&lt;/strong&gt;补充同义词与宽／窄检索式。&lt;br&gt;&lt;strong&gt;自己做：&lt;/strong&gt;抽查前 20 条相关性，再改词。&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="page-note"&gt;记录检索式与日期；用 DOI／出版社页面核对题名和版本。相关图谱不等于直接引用。&lt;/div&gt;
+
+???
+约 2 分钟。Scholar 不照搬 WoS 的 TS 语法。结果太少去掉方法词，太杂则限定对象或数据条件；高被引不等于必读经典。官网帮助：https://scholar.google.com/intl/en/scholar/help.html 。WoS 可能需要机构权限。
+---
+
+class: tracking
+
+## 怎样持续追踪，并留下阅读线索？
+
+&lt;div class="mini-flow"&gt;&lt;b&gt;持续追踪&lt;/b&gt;&lt;i&gt;→&lt;/i&gt;&lt;b&gt;筛选文献&lt;/b&gt;&lt;i&gt;→&lt;/i&gt;&lt;b&gt;导入文献库&lt;/b&gt;&lt;i&gt;→&lt;/i&gt;&lt;b&gt;留下阅读线索&lt;/b&gt;&lt;/div&gt;
+
+&lt;div class="tracking-layout"&gt;
+&lt;figure&gt;&lt;img src="figure/1.jpg" alt="原有 Google Scholar 作者主页截图，展示关注按钮与邮件提醒选项"&gt;&lt;figcaption&gt;作者主页 → Follow／关注 → 选择提醒 → 填邮箱；旧版截图，界面以当前版本为准&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;div&gt;
+&lt;h3&gt;三种追踪入口&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;主题：&lt;/strong&gt;&lt;a href="https://scholar.google.com/intl/en/scholar/help.html#alerts"&gt;Scholar Alerts&lt;/a&gt;&lt;br&gt;检索后创建提醒&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;作者：&lt;/strong&gt;作者主页 + Follow&lt;br&gt;关注新文章与新引用&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;期刊：&lt;/strong&gt;官网目录提醒&lt;br&gt;邮件或 RSS，每周集中筛选&lt;/p&gt;
+&lt;div class="quiet-block"&gt;&lt;a href="https://endnote.com/"&gt;EndNote&lt;/a&gt;／&lt;a href="https://www.zotero.org/"&gt;Zotero&lt;/a&gt;&lt;br&gt;导入 RIS／BibTeX → 去重、关联 PDF&lt;br&gt;笔记留：为何读 + 原文位置&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+???
+约 1.5 分钟。演示截图里的 Follow、提醒选项和邮件。正文只放一张真正可讲解的操作图。作者名只是原报告界面素材。AI 可汇总本周筛选的摘要与来源，但不能替代精读。我的“文献雷达”用于持续追踪与定期汇总，后半场展开。
+---
+
+class: reading
+
+## 怎样精读论文，并形成自己的问题？
+
+&lt;div class="five-points"&gt;
+&lt;div&gt;&lt;span&gt;01&lt;/span&gt;&lt;strong&gt;研究问题&lt;/strong&gt;&lt;p&gt;解决什么？&lt;br&gt;对象与目标是什么？&lt;/p&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span&gt;02&lt;/span&gt;&lt;strong&gt;模型假设&lt;/strong&gt;&lt;p&gt;依赖哪些条件？&lt;br&gt;与目标数据吻合吗？&lt;/p&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span&gt;03&lt;/span&gt;&lt;strong&gt;方法&lt;/strong&gt;&lt;p&gt;关键步骤是什么？&lt;br&gt;为何这样设计？&lt;/p&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span&gt;04&lt;/span&gt;&lt;strong&gt;结果证据&lt;/strong&gt;&lt;p&gt;证据支持什么？&lt;br&gt;验证范围有多大？&lt;/p&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span&gt;05&lt;/span&gt;&lt;strong&gt;贡献与局限&lt;/strong&gt;&lt;p&gt;比已有工作好在哪？&lt;br&gt;哪些问题仍未解决？&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="reading-flow"&gt;&lt;b&gt;读懂一篇&lt;/b&gt;&lt;i&gt;→&lt;/i&gt;&lt;b&gt;比较几篇&lt;/b&gt;&lt;i&gt;→&lt;/i&gt;&lt;b&gt;候选问题&lt;/b&gt;&lt;i&gt;→&lt;/i&gt;&lt;b&gt;进一步检查&lt;/b&gt;&lt;/div&gt;
+
+&lt;div class="evidence"&gt;&lt;strong&gt;AI 可提取与比较，但每条都留页码／公式号。&lt;/strong&gt;&lt;p&gt;原文结论 + 来源位置　｜　AI 分析 + 待核实　｜　自己的判断 + 验证计划&lt;/p&gt;&lt;/div&gt;
+
+???
+约 2.5 分钟。每篇论文做一张证据卡。先读摘要、引言、结论，判断关联，再看模型、推导和实验。比较 2–3 篇时，对齐这五个维度；提出候选问题后，重新检索、推导或实验。AI 找不到原文依据时标“未报告”，不能把分析写成论文结论。
+---
+
+class: implementation
+
+## 怎样在已有工作上开展自己的研究？
+
+&lt;div class="four-flow"&gt;
+&lt;div class="step"&gt;&lt;span&gt;01&lt;/span&gt;&lt;strong&gt;精读与复现&lt;/strong&gt;&lt;p&gt;选 2–3 篇高度相关论文&lt;br&gt;理解推导与代码&lt;br&gt;复现主要结果&lt;/p&gt;&lt;/div&gt;
+&lt;div class="step"&gt;&lt;span&gt;02&lt;/span&gt;&lt;strong&gt;真正看懂模型&lt;/strong&gt;&lt;p&gt;研究问题与关键假设&lt;br&gt;方法逻辑与实验设置&lt;br&gt;适用范围与局限&lt;/p&gt;&lt;/div&gt;
+&lt;div class="step"&gt;&lt;span&gt;03&lt;/span&gt;&lt;strong&gt;逐步拓展&lt;/strong&gt;&lt;p&gt;先做小而明确的改进&lt;br&gt;说清“改了什么”&lt;br&gt;再逐渐增加研究内容&lt;/p&gt;&lt;/div&gt;
+&lt;div class="step"&gt;&lt;span&gt;04&lt;/span&gt;&lt;strong&gt;验证与修改&lt;/strong&gt;&lt;p&gt;理论分析&lt;br&gt;基准比较与数值实验&lt;br&gt;检查结果，反复修正&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p class="ai-label"&gt;&lt;a href="https://openai.com/codex/"&gt;Codex&lt;/a&gt; 等 AI 如何参与&lt;/p&gt;
+&lt;div class="ai-flow"&gt;&lt;span&gt;论文与代码输入&lt;/span&gt;&lt;i&gt;→&lt;/i&gt;&lt;span&gt;AI 协助复现&lt;/span&gt;&lt;i&gt;→&lt;/i&gt;&lt;span&gt;人工核对与理解&lt;/span&gt;&lt;i&gt;→&lt;/i&gt;&lt;span&gt;提出改进&lt;/span&gt;&lt;i&gt;→&lt;/i&gt;&lt;span&gt;AI 协助实现&lt;/span&gt;&lt;i&gt;→&lt;/i&gt;&lt;span&gt;验证结果&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class="version-note"&gt;&lt;strong&gt;版本控制与备份：Git／&lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;及时提交，写明关键修改与实验结果；代码、数据和环境配置还要安排独立备份。&lt;/div&gt;
+
+???
+约 2.5 分钟，重点页。先精读复现高度相关的论文，不要一开始就造复杂模型。理解不能只看程序运行成功；要能解释问题、假设、方法、实验与局限。小步改进也需要理论或实验支持。AI 提供解释和实现，研究者核对；用 git commit 记录能解释的修改，远端仓库不能代替全部数据与环境的备份。
+---
+
+class: plotting
+
+## 怎样把参考图转化为自己的科研图？
+
+&lt;div class="plain-flow"&gt;参考图与审美标准 &lt;i&gt;→&lt;/i&gt; 明确绘图要求 &lt;i&gt;→&lt;/i&gt; AI 辅助实现 &lt;i&gt;→&lt;/i&gt; 人工检查&lt;/div&gt;
+
+&lt;div class="plot-layout"&gt;
+&lt;figure&gt;&lt;img src="figure/13.jpg" alt="原报告科研组合图，展示配色、误差条、坐标和六个子图的布局"&gt;&lt;figcaption&gt;放大看：配色、线宽、字号、图例与子图布局 · &lt;a href="https://github.com/macromeer/scifig_plot_examples_R"&gt;原示例代码&lt;/a&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;div&gt;
+&lt;h3&gt;给 AI 的信息&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;原始数据 + 变量含义&lt;/li&gt;&lt;li&gt;参考图／目标图形类型&lt;/li&gt;&lt;li&gt;配色、线宽、字号、尺寸&lt;br&gt;图例位置、子图布局&lt;/li&gt;&lt;li&gt;这次具体要改哪一处&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;给清楚视觉要求，生成可编辑代码，再逐步修改。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://ggplot2.tidyverse.org/"&gt;ggplot2&lt;/a&gt;／&lt;a href="https://matplotlib.org/"&gt;Matplotlib&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="page-note"&gt;研究者验图：数值、单位、坐标与误差条是否准确？不能为了好看改变数据或结论。&lt;/div&gt;
+
+???
+约 1.5 分钟。原报告的参考图并非本人的可靠性研究结果。先指着图片说明想保留的视觉标准，再告诉 AI 数据与要改的细节，不必逐句教它代码语法。输出保留 R/Python 脚本与可编辑矢量文件；人工对照结果表抽查。iris 散点演示仍保存在 ggplot案例.R 和 figure/16.jpg。
+---
+
+class: writing
+
+## 怎样选择论文与研究报告的写作工具？
+
+&lt;div class="writing-layout"&gt;
+&lt;div class="writing-copy"&gt;
+&lt;section&gt;&lt;h3&gt;LaTeX／&lt;a href="https://www.overleaf.com/"&gt;Overleaf&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;论文排版与数学公式&lt;br&gt;交叉引用与参考文献&lt;br&gt;期刊模板&lt;/p&gt;&lt;/section&gt;
+&lt;section&gt;&lt;h3&gt;&lt;a href="https://rmarkdown.rstudio.com/"&gt;R Markdown&lt;/a&gt;／&lt;a href="https://quarto.org/"&gt;Quarto&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;代码、图表、结果与报告结合&lt;br&gt;修改分析后，可重复生成文档&lt;/p&gt;&lt;/section&gt;
+&lt;/div&gt;
+&lt;div class="writing-examples"&gt;
+&lt;figure&gt;&lt;a href="figure/9.jpg" target="_blank"&gt;&lt;img src="figure/9.jpg" alt="LaTeX 源码与公式排版结果对照，点击查看原图"&gt;&lt;/a&gt;&lt;figcaption&gt;LaTeX：源码与公式排版结果 · 点击看原图&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure&gt;&lt;a href="figure/10.jpg" target="_blank"&gt;&lt;img src="figure/10.jpg" alt="R Markdown 在 RStudio 中的源码与论文输出对照，点击查看原图"&gt;&lt;/a&gt;&lt;figcaption&gt;R Markdown：RStudio 源码与文档输出 · 点击看原图&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+???
+约 1.5 分钟。此页只讲工具用途。右上指公式与交叉引用的源码／输出，右下指 R Markdown 文件头、正文与生成的论文。区别是各自适合的工作方式，不是互相完全替代。本报告依旧使用 xaringan。
+---
+
+class: submission
+
+## 怎样做投稿前检查与模拟评审？
+
+&lt;div class="submission-layout"&gt;
+&lt;div&gt;
+&lt;h3&gt;投稿前：对照期刊官网&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;研究范围、文章类型与作者指南&lt;/li&gt;&lt;li&gt;字数、匿名要求、图表格式&lt;br&gt;数据／代码声明及 AI 使用要求&lt;/li&gt;&lt;li&gt;数字、公式、引用与结果一致&lt;br&gt;作者信息和文件完整&lt;/li&gt;&lt;/ul&gt;
+&lt;div class="quiet-block"&gt;检查依据：&lt;strong&gt;目标期刊当前指南&lt;/strong&gt;&lt;br&gt;不是旧模板，也不是 AI 的记忆。&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="review-example"&gt;
+&lt;h3&gt;AI 辅助模拟期刊审稿&lt;/h3&gt;
+&lt;p class="journal-target"&gt;目标：IISE Transactions 或&lt;br&gt;Reliability Engineering &amp;amp; System Safety&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;先核查：&lt;/strong&gt;期刊范围、文章类型与投稿要求。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;再评审：&lt;/strong&gt;研究问题、创新性、文献定位、&lt;br&gt;方法假设、理论结果、实验设计、结论边界。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;请输出：&lt;/strong&gt;主要问题 + 论文位置 + 修改建议。&lt;/p&gt;
+&lt;p class="resource"&gt;&lt;a href="https://github.com/Imbad0202/academic-research-skills"&gt;Academic Research Skills ↗&lt;/a&gt;&lt;br&gt;Academic Paper Reviewer：辅助模拟评审与修改建议&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="revision-flow"&gt;&lt;strong&gt;返修&lt;/strong&gt;&lt;span&gt;审稿意见&lt;/span&gt;&lt;i&gt;→&lt;/i&gt;&lt;span&gt;具体修改&lt;/span&gt;&lt;i&gt;→&lt;/i&gt;&lt;span&gt;正文位置&lt;/span&gt;&lt;i&gt;→&lt;/i&gt;&lt;span&gt;逐条回复&lt;/span&gt;&lt;/div&gt;
+
+???
+约 1.5 分钟。这是投稿前模拟评审的提示场景，不是声称论文已投到这两本期刊。提供全文与已核实的目标指南，让 AI 针对定位指出问题；要求具体位置，缺少依据就标待核查。Academic Research Skills 作者仓库已核对，包含 Academic Paper Reviewer 功能；不在这里讲安装或内部结构。模拟评审不代表期刊决定，最终意见由作者判断。https://github.com/Imbad0202/academic-research-skills
+---
+
+class: inverse, middle, closing
+
+## 科研流程与 AI 辅助科研
+
+&lt;div class="closing-words"&gt;&lt;div&gt;&lt;strong&gt;科研流程&lt;/strong&gt;&lt;p&gt;明确问题，核实证据&lt;/p&gt;&lt;/div&gt;&lt;div&gt;&lt;strong&gt;AI 辅助&lt;/strong&gt;&lt;p&gt;整理、实现与反复检查&lt;/p&gt;&lt;/div&gt;&lt;div&gt;&lt;strong&gt;可复用工作流&lt;/strong&gt;&lt;p&gt;把有效做法沉淀下来&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class="next-talk"&gt;接下来&lt;br&gt;&lt;strong&gt;《从 Prompt 到 Skill：我的 AI 科研工作流实践》&lt;/strong&gt;&lt;/div&gt;
+
+???
+约 0.5 分钟。加上封面约 0.5 分钟，全程建议 17–18 分钟，可压缩工具与检索页到 16–17 分钟。研究者负责问题提出、方法判断、证据核实与结论解释。此处切换到已有独立 PPT，不增加互动环节。
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="index_files/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+  "slideNumberFormat": "%current% / %total%",
+  "highlightStyle": "github",
+  "highlightLines": true,
+  "ratio": "16:9",
+  "countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+  </body>
+</html>
